@@ -4,7 +4,7 @@
 // 1. printIndices
 function printIndices(items) {
   for (let i = 0; i < items.length; i += 1) {
-    console.log("${items[i]} ${i}");
+    console.log(`${items[i]} ${i}`);
   } 
 }
 // for i in range(len(items)):
@@ -18,8 +18,8 @@ function everyOtherItem(items) {
     if (i % 2 === 0) {
       result.push(items[i]);
     }
-  console.log(result);
   }
+  console.log(result);
 }
 // result = []
 
@@ -33,4 +33,19 @@ function everyOtherItem(items) {
 function smallestNItems(items, n) {
   const sortedItems = items.sort();
   let sortedNItems = sortedItems.slice(0, n);
+  const reversed = sortedNItems.reverse();
+  console.log(reversed)
+
 }
+
+
+let myList = [1, 2, 3, 4, 5];
+
+console.log('This is #1:');
+printIndices(myList);
+
+console.log('This is #2:');
+everyOtherItem(myList);
+
+console.log('This is #3:');
+smallestNItems(myList, 2);

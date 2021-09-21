@@ -2,7 +2,9 @@
 
 
 // 1. isHometown
-
+function isHomeTown(town) {
+    return town === 'San Francisco';
+}
 // Define your function here
 
 
